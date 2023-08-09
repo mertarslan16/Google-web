@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        a{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 97vh;
+        }
+        .navbar{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+           
+        }
+        .main-container{
+            display: flex;
+            flex-direction: column;
+            gap: calc(50px);
+        }
+        .nav-button{
+            background-color: blue;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+        .search-main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mic{
+            width: 20px;
+            position: absolute;
+            right: 38%;
+        }    
+        .search{
+            width: 50vh;
+            height: 20px;
+            border-radius: 10px;
+            outline: none;
+            padding: 3px;
+            border-width: 1px;
+            border-color: rgb(205, 205, 205);
+            position: relative;
+        }
+        .google-search{
+            margin-top: 10px;
+            padding:10px ;
+            background-color: #f2f2f2;
+            border: none;
+            cursor: pointer;
+        }
+       .footer{
+            width: 100%; 
+            display: flex;
+            justify-content: space-between;
+       } 
+       .left{
+        display: flex;
+        gap: calc(20px);
+       }
+       .right{
+        display: flex;
+        align-items: center;
+        gap: calc(20px);
+       }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar">
+                <div class="left">
+                    <a href>About</a>
+                    <a href>Store</a>
+                </div>
+                <div class="right">
+                    <a href>Gmail</a>
+                    <a href>Images</a>
+                    <link rel="stylesheet" href>
+                    <button class="nav-button">Sing In</button>
+                </div>
+            </nav>
+            <main class="main">
+                <div class="main-container">
+                    <img src="/public/logo.png" alt="logo" class="logo">
+                    <div class="search-main">
+                        <input type="text" class="search">
+                        <img src="/public/voicelogo.png" alt="mic" class="mic">
+                    </div>
+                    <div>
+                        <button class="google-search">Google Search</button>
+                        <button class="google-search">Im Feeling Lucky</button>
+                    </div>
+                </divc>
+            </main>
+            <footer class="footer">
+                <div class="left">
+                    <a href>Adventsing</a>
+                    <a href>Business</a>
+                    <a href>How Search Works</a>
+                </div>
+                <div class="right">
+                    <a href>Privacy</a>
+                    <a href>Terms</a>
+                    <a href>Settings</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
